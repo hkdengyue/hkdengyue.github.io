@@ -1,3 +1,11 @@
+<section class="featured">
+    {% assign featured = site.posts.first %}
+    <div class="featured-content">
+        <h2><a href="{{ featured.url }}">{{ featured.title }}</a></h2>
+        <p>{{ featured.excerpt }}</p>
+    </div>
+</section>
+
 ---
 layout: default
 title: DengYueMed | Pharma Intelligence
