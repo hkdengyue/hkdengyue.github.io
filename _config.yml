@@ -1,0 +1,11 @@
+title: DengYueMed
+description: Global Pharma Intelligence Platform
+theme: minima
+
+# 分类
+collections:
+  posts:
+    output: true
+
+# 首页显示
+show_excerpts: true
