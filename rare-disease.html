@@ -1,0 +1,15 @@
+---
+layout: default
+title: Rare Disease
+---
+
+<h2>Rare Disease Insights</h2>
+
+{% for post in site.posts %}
+    {% if post.categories contains "rare-disease" %}
+    <div class="card">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt }}</p>
+    </div>
+    {% endif %}
+{% endfor %}
