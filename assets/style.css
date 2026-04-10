@@ -25,3 +25,55 @@
 .card:hover {
     transform: translateY(-5px);
 }
+
+/* ===== Featured Hero ===== */
+.featured {
+    background: linear-gradient(120deg, #0b1f3a, #123d6b);
+    color: white;
+    padding: 60px 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.featured h2 {
+    font-size: 32px;
+}
+
+/* ===== Grid Layout ===== */
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* 左侧主内容 */
+.main-list .card {
+    margin-bottom: 20px;
+}
+
+/* 右侧侧边栏 */
+.sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ===== Card升级 ===== */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border-left: 4px solid #0b1f3a;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== 分类标题 ===== */
+.section-title {
+    margin-top: 40px;
+    font-size: 22px;
+}
