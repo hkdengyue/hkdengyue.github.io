@@ -9,3 +9,14 @@ collections:
 
 # 首页显示
 show_excerpts: true
+
+url: "https://hkdengyue.github.io"
+baseurl: ""
+
+# SEO
+author: DengYueMed
+lang: en
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
