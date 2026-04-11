@@ -256,3 +256,39 @@ nav a:hover {
     background: #2a6df4;
     color: white;
 }
+
+/* ===== 头条大图 ===== */
+.featured {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* 黑色渐变遮罩（保证文字清晰） */
+.featured-overlay {
+    width: 100%;
+    padding: 30px;
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    border-radius: 12px;
+}
+
+/* 标题更大 */
+.featured h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.featured a {
+    color: white;
+    text-decoration: none;
+}
+
+.featured a:hover {
+    text-decoration: underline;
+}
