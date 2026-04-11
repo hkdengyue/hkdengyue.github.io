@@ -5,7 +5,7 @@ title: DengYueMed | Pharma Intelligence
 
 <!-- ===== 头条 ===== -->
 <section class="featured">
-    {% assign featured = site.posts.first %}
+    {% assign featured = site.posts | where: "featured", true | first %}
     <h2><a href="{{ featured.url }}">{{ featured.title }}</a></h2>
     <p>{{ featured.excerpt }}</p>
 </section>
