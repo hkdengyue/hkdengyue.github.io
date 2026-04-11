@@ -4,22 +4,26 @@ title: DengYueMed | Pharma Intelligence
 ---
 
 <!-- ===== 头条 ===== -->
+{% assign featured = site.posts | where: "featured", true | first %}
+
+{% if featured %}
 <section class="featured">
-    {% assign featured = site.posts | where: "featured", true | first %}
     <h2><a href="{{ featured.url }}">{{ featured.title }}</a></h2>
     <p>{{ featured.excerpt }}</p>
 </section>
+{% endif %}
 
+<!-- ===== Latest ===== -->
 <h2 class="section-title">📰 Latest</h2>
 
 <div class="main-list">
-    {% for post in site.posts offset:1 limit:5 %}
+    {% for post in site.posts %}
     {% unless post.featured %}
+
     <div class="card horizontal">
 
         {% if post.image %}
         <img src="{{ post.image }}" class="thumb-horizontal">
-        {% endunless %}
         {% endif %}
 
         <div class="card-content">
@@ -28,31 +32,33 @@ title: DengYueMed | Pharma Intelligence
         </div>
 
     </div>
+
+    {% endunless %}
     {% endfor %}
 </div>
 
-<!-- ===== 主体布局 ===== -->
+<!-- ===== 主体布局（可选保留） ===== -->
 <div class="grid">
 
-    <!-- 左侧：文章流 -->
+    <!-- 左侧 -->
     <div class="main-list">
         {% for post in site.posts limit:5 %}
         <div class="card horizontal">
-    
-    {% if post.image %}
-    <img src="{{ post.image }}" class="thumb-horizontal">
-    {% endif %}
 
-    <div class="card-content">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt }}</p>
-    </div>
+            {% if post.image %}
+            <img src="{{ post.image }}" class="thumb-horizontal">
+            {% endif %}
 
-</div>
+            <div class="card-content">
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <p>{{ post.excerpt }}</p>
+            </div>
+
+        </div>
         {% endfor %}
     </div>
 
-    <!-- 右侧：侧边栏 -->
+    <!-- 右侧 -->
     <div class="sidebar">
         <h3>🔥 Trending</h3>
         <ul>
