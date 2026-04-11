@@ -2,6 +2,7 @@
 title: "Liver Cancer Treatment 2026: New Therapies"
 date: 2026-04-10
 categories: oncology
+tags: [liver cancer, HCC, immunotherapy]
 image: /assets/img/liver.jpg
 ---
 
