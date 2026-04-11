@@ -14,6 +14,7 @@ title: DengYueMed | Pharma Intelligence
 
 <div class="main-list">
     {% for post in site.posts offset:1 limit:5 %}
+    {% unless post.featured %}
     <div class="card horizontal">
 
         {% if post.image %}
