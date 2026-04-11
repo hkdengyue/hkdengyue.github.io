@@ -1,7 +1,8 @@
 ---
-title: "Liver Cancer: New Treatment Options"
+title: "Liver Cancer Treatment 2026: New Therapies"
 date: 2026-04-10
 categories: oncology
+image: /assets/img/liver.jpg
 ---
 
 Liver cancer treatment has entered a new era.
