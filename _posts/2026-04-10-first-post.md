@@ -4,6 +4,8 @@ date: 2026-04-10
 categories: oncology
 tags: [liver cancer, HCC, immunotherapy]
 image: /assets/img/liver.jpg
+lang: en
+ref: liver-cancer
 featured: true
 ---
 
