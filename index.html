@@ -31,9 +31,15 @@ title: DengYueMed | Pharma Intelligence
         {% endif %}
 
         <div class="card-content">
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p>{{ post.excerpt }}</p>
-        </div>
+
+    <p class="meta">
+        {{ post.date | date: "%Y-%m-%d" }} · {{ post.categories }}
+    </p>
+
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt }}</p>
+
+</div>
 
     </div>
 
