@@ -4,6 +4,7 @@ date: 2026-04-10
 categories: oncology
 tags: [liver cancer, HCC, immunotherapy]
 image: /assets/img/liver.jpg
+featured: true
 ---
 
 Liver cancer treatment has entered a new era.
