@@ -7,9 +7,13 @@ title: DengYueMed | Pharma Intelligence
 {% assign featured = site.posts | where: "featured", true | first %}
 
 {% if featured %}
-<section class="featured">
-    <h2><a href="{{ featured.url }}">{{ featured.title }}</a></h2>
-    <p>{{ featured.excerpt }}</p>
+<section class="featured" style="background-image: url('{{ featured.image }}');">
+
+    <div class="featured-overlay">
+        <h2><a href="{{ featured.url }}">{{ featured.title }}</a></h2>
+        <p>{{ featured.excerpt }}</p>
+    </div>
+
 </section>
 {% endif %}
 
