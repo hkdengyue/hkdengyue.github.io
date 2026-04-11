@@ -292,3 +292,10 @@ nav a:hover {
 .featured a:hover {
     text-decoration: underline;
 }
+
+/* ===== 文章信息（日期+分类） ===== */
+.meta {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 6px;
+}
