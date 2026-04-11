@@ -299,3 +299,14 @@ nav a:hover {
     color: #888;
     margin-bottom: 6px;
 }
+
+/* ===== 头条分类标签 ===== */
+.featured-tag {
+    display: inline-block;
+    background: #2a6df4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
