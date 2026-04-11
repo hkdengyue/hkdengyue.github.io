@@ -225,3 +225,7 @@ nav a:hover {
 .card-content h3 a:hover {
     color: #2a6df4;
 }
+
+.main-list {
+    margin-top: 20px;
+}
