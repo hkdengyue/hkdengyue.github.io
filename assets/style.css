@@ -240,3 +240,19 @@ nav a:hover {
     border-radius: 20px;
     font-size: 12px;
 }
+
+.tag {
+    display: inline-block;
+    background: #e6efff;
+    color: #2a6df4;
+    padding: 4px 10px;
+    margin-right: 6px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.tag:hover {
+    background: #2a6df4;
+    color: white;
+}
