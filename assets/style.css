@@ -229,3 +229,14 @@ nav a:hover {
 .main-list {
     margin-top: 20px;
 }
+
+/* ===== 标签系统 ===== */
+.tag {
+    display: inline-block;
+    background: #e6efff;
+    color: #2a6df4;
+    padding: 4px 10px;
+    margin-right: 6px;
+    border-radius: 20px;
+    font-size: 12px;
+}
