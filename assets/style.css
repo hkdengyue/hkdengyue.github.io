@@ -194,3 +194,34 @@ nav a:hover {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+/* ===== 横版卡片 ===== */
+.horizontal {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* 图片（左侧） */
+.thumb-horizontal {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 右侧内容 */
+.card-content {
+    flex: 1;
+}
+
+/* 标题更媒体风 */
+.card-content h3 a {
+    font-size: 20px;
+    color: #0b1f3a;
+    text-decoration: none;
+}
+
+.card-content h3 a:hover {
+    color: #2a6df4;
+}
