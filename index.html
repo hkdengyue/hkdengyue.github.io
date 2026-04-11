@@ -17,9 +17,13 @@ title: DengYueMed | Pharma Intelligence
     <div class="main-list">
         {% for post in site.posts limit:5 %}
         <div class="card">
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p>{{ post.excerpt }}</p>
-        </div>
+    {% if post.image %}
+    <img src="{{ post.image }}" class="thumb">
+    {% endif %}
+
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt }}</p>
+</div>
         {% endfor %}
     </div>
 
